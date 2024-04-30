@@ -11,3 +11,11 @@ def start_server(ip, port):
     server_socket.bind((ip, port))
     server_socket.listen(1)
     print(f'Server ready and listening on {ip}:{port}')
+
+
+if __name__ == '__main__':
+    
+    if len(sys.argv) == 2:
+        IP = sys.argv[1] 
+
+    start_server(IP, PORT)
